@@ -2,6 +2,7 @@
 
 void functionone();
 
+void functiontwo();
 
 int main() {
     printf("Version 3\n");
