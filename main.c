@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("Test Lauryne \n");
+    printf("version 1 \n");
     return 0;
 }
