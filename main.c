@@ -7,7 +7,7 @@
 /****************************Valeurs**************************/
 
 char valeurs[]={'A','K','Q','J','T','9','8','7','6','5','4','3','2'};
-char figure[]={'C','D','H','S'}; //C=Trèfle H=Coeur D=Carreau  S=Pique
+char figures[]={'C','D','H','S'}; //C=Trèfle H=Coeur D=Carreau  S=Pique
 /******************************Structures*********************************/
 typedef struct carte
 {
@@ -26,24 +26,24 @@ char generatefigure();
 
 char generatevalue ();
 
-
+/*************************************Choix figures et valeurs******************************/
 char generatevalue() {
     srand(time(NULL)); //initialisation du nb aléatoire
-    int nb1= rand() %13+1;
+    sleep(1);
+    int nb1= rand() %13;
 
-    carte.valeur=valeurs[nb1]; //prend une valeur au hasard
-
-    printf("%d",nb1);
-    return 0;
+    return valeurs[nb1];
 }
 
 char generatefigure() {
         srand(time(NULL));
         sleep(1);
         int nb2 = rand() %4;
-        carte.figure = figures[nb2];
-    return 0;
+
+    return figures[nb2];
 }
+
+/*********************************Génération carte***************************************/
 
 
 int main() {
