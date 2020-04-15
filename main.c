@@ -28,7 +28,6 @@ char generatevalue ();
 
 /*************************************Choix figures et valeurs******************************/
 char generatevalue() {
-    srand(time(NULL)); //initialisation du nb aléatoire
     sleep(1);
     int nb1= rand() %13;
 
@@ -36,17 +35,29 @@ char generatevalue() {
 }
 
 char generatefigure() {
-        srand(time(NULL));
         sleep(1);
         int nb2 = rand() %4;
 
     return figures[nb2];
 }
 
-/*********************************Génération carte***************************************/
 
+/*********************************Génération carte***************************************/
+mainjoueur generatehand() {
+
+    for (int i = 0; i < ; ++i) {
+
+    }
+    carte carte(i);
+
+    mainjoueur result;
+    return result;
+
+
+}
 
 int main() {
-generatevalue();
+    srand(time(NULL)); //commande random
+
     return 0;
 }
