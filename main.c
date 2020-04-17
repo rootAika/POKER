@@ -48,13 +48,12 @@ char generatefigure() {
 /*********************************Génération carte***************************************/
 mainjoueur generatehand() {
 
-    for (int i = 0; i <=5; i++) { //Génération d'une carte
+    for (int i = 0; i <=4; i++) { //Génération d'une carte
 
         carte carte ;
     carte.figure=generatefigure();
     carte.valeur=generatevalue();
-
-// printf("carte : %c%c\n",carte.valeur,carte.figure);
+//printf("Carte : %c%c \n",carte.valeur, carte.figure);
     }
 
 
