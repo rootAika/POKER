@@ -85,6 +85,7 @@ bool is_same_value (carte * carte1, carte * carte2)
 
 int main() {
     srand(time(NULL)); //commande random
-
+    
+    printf("Test");
     return 0;
 }
