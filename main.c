@@ -40,7 +40,7 @@ char generatefigure() {
     srand(time(NULL)); //initialisation du nb aléatoire
     int nb2 = rand() %4;
     printf("%c", figures[nb2]);
-    return figures[nb2];
+    return figures[nb2];pookioj
 }
 
 /******************************************Génération carte********************************/
