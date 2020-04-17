@@ -5,7 +5,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include <unistd.h>
-//***test pull request***************************/
+//***test pull request 2***************************/
 
 /********************************* valeurs***************************************/
 char values []={'A', 'K', 'Q', 'J', 'T', '9', '8', '7', '6', '5', '4', '3', '2'};
