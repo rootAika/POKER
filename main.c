@@ -26,6 +26,9 @@ char generatefigure();
 
 char generatevalue ();
 
+bool is_same_figure(carte*carte1, carte*carte2);
+
+bool is_same_figure(carte*carte1, carte*carte2);
 /*************************************Choix figures et valeurs******************************/
 char generatevalue() {
     sleep(1);
@@ -45,16 +48,40 @@ char generatefigure() {
 /*********************************Génération carte***************************************/
 mainjoueur generatehand() {
 
-    for (int i = 0; i < ; ++i) {
+    for (int i = 0; i <=5; i++) { //Génération d'une carte
+
+        carte carte ;
+    carte.figure=generatefigure();
+    carte.valeur=generatevalue();
 
     }
-    carte carte(i);
+
 
     mainjoueur result;
     return result;
 
 
 }
+
+/************************************bool**************************/
+
+bool is_same_figure(carte*carte1, carte*carte2)
+{
+
+    return carte1->figure == carte2->figure;            //retourne true ou false après avoir comparé les figues des cartes
+
+}
+
+bool is_same_value (carte * carte1, carte * carte2)
+{
+
+    return carte1->valeur == carte2->valeur;            //retourne true ou false après avoir comparé les valeurs des cartes
+
+}
+
+
+
+
 
 int main() {
     srand(time(NULL)); //commande random
