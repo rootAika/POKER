@@ -46,9 +46,12 @@ char generatefigure() {
 /******************************************Génération carte********************************/
 
 mainjoueur generatehand() {
-    carte main;
-    mainjoueur result;
-    return result;
+
+    for (int i=0; i<=5; i++) { //Generation d'une carte
+        carte carte;
+        carte.figure = generatefigure();
+        carte.valeur = generatevalue();
+    }
 }
 
 
