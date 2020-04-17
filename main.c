@@ -52,10 +52,13 @@ mainjoueur generatehand() {
         carte.figure = generatefigure();
         carte.valeur = generatevalue();
     }
+    mainjoueur result;
+    return result;
 }
 
 
 int main() {
     generatefigure();
+    generatehand();
     return 0;
 }
