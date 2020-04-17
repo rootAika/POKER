@@ -53,8 +53,7 @@ mainjoueur generatehand() {
         carte carte ;
         carte.figure=generatefigure();
         carte.valeur=generatevalue();
-        printf("%c%c\n", carte.figure,carte.valeur);
-
+        printf("carte : %c%c\n",carte.valeur,carte.figure);
     }
 
 
@@ -86,9 +85,6 @@ bool is_same_value (carte * carte1, carte * carte2)
 
 int main() {
     srand(time(NULL)); //commande random
-    printf("%c\n", generatehand());
-    generatefigure();
-    generatevalue();
-    printf("Test");
+    generatehand();
     return 0;
 }
